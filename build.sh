@@ -2,7 +2,7 @@
 
 mkdir ffmpeg_transcoder_vnf
 cp -r vnf/* ffmpeg_transcoder_vnf
-cp -r charm ffmpeg_transcoder_vnf
+cp -r charms ffmpeg_transcoder_vnf
 cd ffmpeg_transcoder_vnf
 find * -type f -print | while read line; do md5sum $line >> checksums.txt; done
 cd ..
