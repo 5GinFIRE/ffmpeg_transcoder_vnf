@@ -1,0 +1,16 @@
+"options":
+  "sshproxy": {}
+  "basic":
+    "use_venv": !!bool "false"
+    "packages": []
+    "include_system_packages": !!bool "false"
+  "vnfproxy": {}
+  "transcoder": {}
+"includes":
+- "layer:basic"
+- "layer:basic"
+- "layer:sshproxy"
+- "layer:basic"
+- "layer:sshproxy"
+- "layer:vnfproxy"
+"is": "transcoder"

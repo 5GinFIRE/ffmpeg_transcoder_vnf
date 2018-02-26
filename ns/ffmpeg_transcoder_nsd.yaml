@@ -1,0 +1,38 @@
+nsd:nsd-catalog:
+    nsd:
+    -   id: "ffmpeg_transcoder_ns"
+        name: "ffmpeg_transcoder_ns"
+        short-name: "ffmpeg_transcoder_ns"
+        description: "FFMpeg Transcoder NS"
+        vendor: "5GinFIRE"
+        logo: "5GinFIRE.png"
+        version: "1.0"
+        constituent-vnfd:
+        -   member-vnf-index: 1
+            vnfd-id-ref: "ffmpeg_transcoder_vnf"
+            start-by-default: "true"
+        vld:
+        -   id: "mgmt_vl"
+            name: "mgmt_vl"
+            short-name: "mgmt_vl"
+            vendor: "5GinFIRE"
+            description: "Management Network"
+            version: "1.0"
+            type: "ELAN"
+            mgmt-network: "true"
+            vnfd-connection-point-ref:
+            - member-vnf-index-ref: 1
+              vnfd-id-ref: "ffmpeg_transcoder_vnf"
+              vnfd-connection-point-ref: "transcoder_vnfd/cp0"
+        -   id: "data_vl"
+            name: "data_vl"
+            short-name: "data_vl"
+            vendor: "5GinFIRE"
+            description: "Data Network"
+            version: "1.0"
+            type: "ELAN"
+            mgmt-network: "false"
+            vnfd-connection-point-ref:
+            - member-vnf-index-ref: 1
+              vnfd-id-ref: "ffmpeg_transcoder_vnf"
+              vnfd-connection-point-ref: "transcoder_vnfd/cp1"

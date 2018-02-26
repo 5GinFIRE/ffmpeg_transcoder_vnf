@@ -1,0 +1,20 @@
+"name": "transcoder"
+"summary": "Trancoder charm"
+"maintainer": "Eduardo Sousa <eduardosousa@av.it.pt>"
+"description": |
+  The transcoder charm initializes the transcoder VNF.
+"tags":
+  # Replace "misc" with one or more whitelisted tags from this list:
+  # https://jujucharms.com/docs/stable/authors-charm-metadata
+  - "misc"
+  - "osm"
+  - "vnf"
+  - "nfv"
+"series":
+- "trusty"
+- "xenial"
+- "trusty"
+- "xenial"
+- "trusty"
+- "xenial"
+"subordinate": !!bool "false"
