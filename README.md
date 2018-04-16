@@ -4,7 +4,7 @@ This repository hosts a FFMpeg Video Transcoder VNF. It also contains an example
 
 ## Download the VM Image
 
-You can find the VM image [here](https://atnog.av.it.pt/eduardosousa/ffmpeg_transcoder_image.qcow2).
+You can find the VM image [here](https://atnog.av.it.pt/~eduardosousa/ffmpeg_transcoder_image.qcow2).
 The VM image should be uploaded with the following name: **ffmpeg_transcoder_image**
 
 ## Build the descriptors
